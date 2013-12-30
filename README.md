@@ -75,3 +75,28 @@ inherit	应该从子元素继承 box-direction 属性的值
 * spread	可选。阴影的尺寸。
 * color	可选。阴影的颜色。请参阅 CSS 颜色值。
 * inset	可选。将外部阴影 (outset) 改为内部阴影。
+
+### @font-face 自定义字体
+
+    title{
+        font: bold 36px myfont,verdana,sans-serif;
+        text-shadow:2px 2px 3px #aaaaaa;
+    }
+    @font-face {
+        font-family: 'myfont';
+        src: url("../other/YaHei.Consolas.1.12.ttf");
+    }
+
+### gradient 渐变
+* linear-gradient：线性渐变
+> background: -webkit-linear-gradient(tops,#ffffff,#006699); 自上到下渐变
+* radial-gradient：放射渐变
+> background: -webkit-radial-gradient(center,circle,#ffffff 0%,#006699 200%); 中间向外放射渐变
+
+### rgba(0,0,0,0.5)
+最后一位参数表示透明度：
+
+    #title{
+        font: bold 36px myfont,verdana,sans-serif;
+        text-shadow:rgba(0,0,0,0.5) 2px 2px 3px;
+    }

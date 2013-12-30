@@ -19,11 +19,17 @@ body{
     -webkit-box-shadow:5px 5px 5px #888888;
     -o-box-shadow:5px 5px 5px #888888;
     box-shadow:2px 2px 3px #aaaaaa;
+
+    background: -webkit-linear-gradient(tops,#ffffff,#006699);
+    background: -moz-linear-gradient(top,#ffffff,#006699);
+    background: -webkit-radial-gradient(center,circle,#ffffff 0%,#006699 200%);
+
 }
+
 
 #title{
     font: bold 36px myfont,verdana,sans-serif;
-    text-shadow:2px 2px 3px #aaaaaa;
+    text-shadow:rgba(0,0,0,0.5) 2px 2px 3px;
 }
 @font-face {
     font-family: 'myfont';
