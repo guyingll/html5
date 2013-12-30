@@ -14,6 +14,11 @@ body{
     -moz-border-radius:20px 10px 30px 50px;
     -webkit-border-radius:20px;
     -o-border-radius:20px/10px;
+
+    -moz-box-shadow:5px 5px 5px #888888;
+    -webkit-box-shadow:5px 5px 5px #888888;
+    -o-box-shadow:5px 5px 5px #888888;
+    box-shadow:2px 2px 3px #aaaaaa;
 }
 
 #title{

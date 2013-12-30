@@ -59,3 +59,19 @@ inherit	应该从子元素继承 box-direction 属性的值
 * center	均等地分割多余的空间，一半位于子元素之上，另一半位于子元素之下。
 * baseline	如果 box-orient 是inline-axis或horizontal，所有子元素均与其基线对齐。
 * stretch	拉伸子元素以填充包含块
+
+### border-image
+ url	设置所有 border-image-* 属性的简写属性。
+
+### border-radius
+ value 设置所有四个 border-*-radius 属性的简写属性。
+
+### box-shadow: h-shadow v-shadow blur spread color inset;
+ 注释：box-shadow 向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 inset 关键词来规定。省略长度的值是 0。
+
+* h-shadow	必需。水平阴影的位置。允许负值。
+* v-shadow	必需。垂直阴影的位置。允许负值。
+* blur	可选。模糊距离。
+* spread	可选。阴影的尺寸。
+* color	可选。阴影的颜色。请参阅 CSS 颜色值。
+* inset	可选。将外部阴影 (outset) 改为内部阴影。
