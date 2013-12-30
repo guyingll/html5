@@ -22,6 +22,11 @@ body{
 }
 
 #title{
-    font: bold 36px verdana,sans-serif;
+    font: bold 36px myfont,verdana,sans-serif;
+    text-shadow:2px 2px 3px #aaaaaa;
+}
+@font-face {
+    font-family: 'myfont';
+    src: url("../other/YaHei.Consolas.1.12.ttf");
 }
 
