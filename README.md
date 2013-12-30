@@ -1,15 +1,12 @@
 # html5 , css3 ,javascript
 
-
 ### clear: both;
 clear: both使文档回到常规流，既清除同行元素，不允许其它元素与之在一行内。
-
 
 ### float: left;
 float:left(左浮动)他使得指定元素脱离普通的文档流而产生的特别的布局特性。
 并且FLOAT必需应用在块级元素之上，也就是说浮动并不应用于内联标签。或者换句话来说当应用了FLOAT那么这个元素将被指定为块级元素。
 用于并列多个块。
-
 
 ### display: inline-block;
 很多时候我们必须使一些块元素并排显示，一般想到的是必须使用浮动，但是块元素浮动给边距(margin)的时候在IE下会出现加倍的BUG，
@@ -17,15 +14,48 @@ float:left(左浮动)他使得指定元素脱离普通的文档流而产生的�
 display:inline-block简单来说就是将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内，
 允许空格。
 
-
 ### border-top:2px solid #999999;
 solid：实线
 边框2像素的实线(颜色的#999999)
 
-
 ### box-sizing: content-box|border-box|inherit;
-* box-sizing: content-box|border-box|inherit;
 * content-box:这是由 CSS2.1 规定的宽度高度行为。宽度和高度分别应用到元素的内容框。在宽度和高度之外绘制元素的内边距和边框。
 * border-box:为元素设定的宽度和高度决定了元素的边框盒。就是说，为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。
   通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。
 * inherit	规定应从父元素继承 box-sizing 属性的值。
+
+### box-orient: horizontal|vertical|inline-axis|block-axis|inherit;
+* horizontal	在水平行中从左向右排列子元素。
+* vertical	    从上向下垂直排列子元素。
+* inline-axis	沿着行内轴来排列子元素（映射为 horizontal）。
+* block-axis	沿着块轴来排列子元素（映射为 vertical）。
+* inherit	    应该从父元素继承 box-orient 属性的值。
+
+### box-direction: normal|reverse|inherit;
+normal	以默认方向显示子元素。
+reverse	以反方向显示子元素。
+inherit	应该从子元素继承 box-direction 属性的值
+
+### box-pack: start|end|center|justify;
+* start
+对于正常方向的框，首个子元素的左边缘被放在左侧（最后的子元素后是所有剩余的空间）
+对于相反方向的框，最后子元素的右边缘被放在右侧（首个子元素前是所有剩余的空间）
+* end
+对于正常方向的框，最后子元素的右边缘被放在右侧（首个子元素前是所有剩余的空间）。
+对于相反方向的框，首个子元素的左边缘被放在左侧（最后子元素后是所有剩余的空间）。
+* center	均等地分割多余空间，其中一半空间被置于首个子元素前，另一半被置于最后一个子元素后
+* justify	在每个子元素之间分割多余的空间（首个子元素前和最后一个子元素后没有多余的空间）。
+
+### box-flex: value;
+* value	元素的可伸缩行。柔性是相对的，例如 box-flex 为 2 的子元素两倍于 box-flex 为 1 的子元素。
+
+### box-align: start|end|center|baseline|stretch;
+* start
+对于正常方向的框，每个子元素的上边缘沿着框的顶边放置。
+对于反方向的框，每个子元素的下边缘沿着框的底边放置。
+* end
+对于正常方向的框，每个子元素的下边缘沿着框的底边放置。
+对于反方向的框，每个子元素的上边缘沿着框的顶边放置。
+* center	均等地分割多余的空间，一半位于子元素之上，另一半位于子元素之下。
+* baseline	如果 box-orient 是inline-axis或horizontal，所有子元素均与其基线对齐。
+* stretch	拉伸子元素以填充包含块
