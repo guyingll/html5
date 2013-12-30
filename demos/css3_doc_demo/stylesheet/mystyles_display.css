@@ -1,0 +1,28 @@
+#parentbox{
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:reverse;
+    /*-webkit-box-pack:center;*/
+    width: 600px;
+}
+
+#box-1{
+    /*width: 100px;*/
+    -webkit-box-flex:1;
+}
+
+#box-2{
+    /*width: 100px;*/
+    -webkit-box-flex:1;
+}
+
+#box-3{
+    /*width: 100px;*/
+    -webkit-box-flex:1;
+}
+
+#box-4{
+    /*width: 100px;*/
+    -webkit-box-flex:1;
+}
