@@ -1,0 +1,92 @@
+/*全局选择器 " * "
+  设置所有元素的边距为0*/
+* {
+    margin: 0px;
+}
+
+h1{
+    font: bold 20px verdana,sans-serif;
+}
+
+h2{
+    font: bold 14px verdana,sans-serif;
+}
+
+/*居中显示*/
+body{
+    text-align: center;
+}
+
+/*创建主框*/
+#wrapper{
+    width: 960px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+/*标头*/
+#main_header{
+    background: #FFFBB9;
+    border: 1px solid #999999;
+    padding: 20px;
+    /*text-align: center;*/
+}
+
+/*导航栏*/
+#main_menu{
+    background: #CCCCCC;
+    padding: 5px 15px;
+}
+
+/*inline-block 内联框*/
+#main_menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana,sans-serif;
+}
+
+/*边栏*/
+#main_aside{
+    float: right;
+    width: 220px;
+    margin: 20px 0px;
+    padding: 20px;
+    background: #cccccc;
+}
+
+/*主区域*/
+#main_section{
+    float: left;
+    width: 660px;
+    margin: 20px;
+}
+
+/*注脚*/
+#main_footer{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top:2px solid #999999 ;
+    margin: 20px;
+}
+
+/*文章*/
+article{
+    background: #FFFBCC;
+    border: 1px solid #999999;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+article footer{
+    text-align: right;
+}
+
+time{
+    color: #999999;
+}
+
+figcaption{
+    font: italic 14px verdana,sans-serif;
+}

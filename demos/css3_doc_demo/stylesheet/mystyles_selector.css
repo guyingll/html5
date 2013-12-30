@@ -1,0 +1,89 @@
+/*设置所有元素的边距为0*/
+/** {*/
+    /*margin: 0px;*/
+/*}*/
+
+p {
+    font-size: 35px;
+}
+
+#text1 {
+    font-size: 40px;
+}
+
+.text2 {
+    font-size: 45px;
+}
+
+p[name] {
+    font-size: 40px;
+}
+
+p[name="text4"] {
+    font-size: 20px;
+}
+
+p[name^="my"] {
+    font-size: 10px;
+}
+
+p[name$="my"] {
+    font-size: 15px;
+}
+
+p[name*="my"] {
+    font-size: 20px;
+}
+
+p:nth-child(1) {
+    background: #999999;
+}
+
+p:nth-child(2) {
+    background: #cccccc;
+}
+
+p:nth-child(3) {
+    background: #999999;
+}
+
+p:nth-child(4) {
+    background: #cccccc;
+}
+
+/*奇数行*/
+p:nth-child(odd){
+    background: #999999;
+}
+
+/*偶数行*/
+p:nth-child(even){
+    background: #cccccc;
+}
+
+/*最后元素*/
+p:last-child{
+    background: #dddddd;
+}
+
+/*否定伪类*/
+:not(p){
+    margin: 0px;
+}
+
+/* ">"指定元素的子元素的样式*/
+div > p.mytext2{
+    color: #990000;
+}
+
+/* "+"指定元素之后同级第一个指定元素的样式*/
+p.mytext3 + p {
+    color: #990000;
+}
+
+/* "+"指定元素之后同级所有指定元素的样式*/
+p.mytext4 ~ p {
+    color: #172d99;
+}
+
+
