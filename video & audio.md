@@ -1,4 +1,4 @@
-# video &
+# video & audio
 
 
 ### video 标签的属性
@@ -18,4 +18,10 @@
         </video>
 
 
-###
+### audio 标签的属性
+
+
+
+
+
+### [HTML5 DOM](http://www.w3school.com.cn/html5/html5_ref_audio_video_dom.asp) 为 audio 和 video 元素提供了方法、属性和事件。
