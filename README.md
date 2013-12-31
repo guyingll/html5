@@ -157,3 +157,41 @@ alpha(透明度)。 取值在0到1之间；
 5. :visited	向已被访问的链接添加样式。
 6. :first-child	向元素的第一个子元素添加样式。
 7. :lang	向带有指定 lang 属性的元素添加样式。
+
+
+### -webkit-transition
+* transition: property duration timing-function delay;
+
+1. transition-property	规定设置过渡效果的 CSS 属性的名称。
+2. transition-duration	规定完成过渡效果需要多少秒或毫秒。
+3. transition-timing-function	规定速度效果的速度曲线。
+4. transition-delay	定义过渡效果何时开始。
+
+
+### anmimation 动画
+
+    #mainbox4{
+        display: block;
+        width: 500px;
+        margin: 50px auto;
+        padding: 15px;
+        text-align: center;
+        border: 29px solid #999999;
+        background: #dddddd;
+
+        -webkit-animation:myfirst 5s;
+    }
+
+> keyframes:
+
+    @-webkit-keyframes myfirst{
+        0%   {background:red;}
+        25%  {background:yellow;}
+        50%  {background:blue;}
+        100% {background:green;}
+    }
+
+    @-webkit-keyframes myfirst{
+        from {background: red;}
+        to {background: yellow;}
+    }

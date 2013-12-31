@@ -35,7 +35,46 @@ body{
     text-align: center;
     border: 29px solid #999999;
     background: #dddddd;
-    -webkit-transform:skew(20deg)
+    -webkit-transform:skew(20deg);
+}
+
+#mainbox3{
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border: 29px solid #999999;
+    background: #dddddd;
+
+    -webkit-transition-duration:5s;
+    -webkit-transition-delay:2s;
+
+}
+
+#mainbox3:hover{
+    -webkit-transform:rotate(45deg);
+}
+
+
+#mainbox4{
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border: 29px solid #999999;
+    background: #dddddd;
+
+    -webkit-animation:myfirst 5s;
+}
+
+
+@-webkit-keyframes myfirst{
+    0%   {background:red;}
+    25%  {background:yellow;}
+    50%  {background:blue;}
+    100% {background:green;}
 }
 
 
