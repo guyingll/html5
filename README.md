@@ -100,3 +100,16 @@ inherit	应该从子元素继承 box-direction 属性的值
         font: bold 36px myfont,verdana,sans-serif;
         text-shadow:rgba(0,0,0,0.5) 2px 2px 3px;
     }
+
+### hsla(120,100%,50%,0.1);
+* 语法：
+length || percentage || percentage|| opacity
+* 取值：
+1. length ：
+Hue(色调)。 0(或360)表示红色，120表示绿色，240表示蓝色，当然可取其他数值来确定其它颜色；
+2. percentage ：
+Saturation(饱和度)。 取值为0%到100%之间的值；
+3. percentage ：
+Lightness(亮度)。 取值为0%到100%之间的值；
+4. opacity ：
+alpha(透明度)。 取值在0到1之间；

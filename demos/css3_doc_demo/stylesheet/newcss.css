@@ -24,12 +24,15 @@ body{
     background: -moz-linear-gradient(top,#ffffff,#006699);
     background: -webkit-radial-gradient(center,circle,#ffffff 0%,#006699 200%);
 
+    outline: 2px dashed #000099;
+    outline-offset: 15px;
 }
 
 
 #title{
     font: bold 36px myfont,verdana,sans-serif;
     text-shadow:rgba(0,0,0,0.5) 2px 2px 3px;
+    color: hsla(120,100%,50%,0.1);
 }
 @font-face {
     font-family: 'myfont';
