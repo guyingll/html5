@@ -26,6 +26,41 @@ body{
 
     outline: 2px dashed #000099;
     outline-offset: 15px;
+
+    -webkit-border-image:url("../img/border.png") 29 stretch;
+    -moz-border-image:url("../img/border.png") 29 stretch;
+    border-image:url("../img/border.png") 29 stretch;
+
+}
+
+#mainbox1{
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border: 29px solid #999999;
+    background: #dddddd;
+
+    -webkit-border-image:url("../img/border.png") 29 stretch;
+    -moz-border-image:url("../img/border.png") 29 stretch;
+    border-image:url("../img/border.png") 29 stretch;
+
+}
+
+#mainbox2{
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border: 29px solid #999999;
+    background: #dddddd;
+
+    -webkit-border-image:url("../img/border.png") 29 round;
+    -moz-border-image:url("../img/border.png") 29 round;
+    border-image:url("../img/border.png") 29 round;
+
 }
 
 
@@ -37,5 +72,11 @@ body{
 @font-face {
     font-family: 'myfont';
     src: url("../other/YaHei.Consolas.1.12.ttf");
+}
+
+.title{
+    font: bold 36px myfont,verdana,sans-serif;
+    text-shadow:rgba(0,0,0,0.5) 2px 2px 3px;
+    color: hsla(120,100%,50%,0.1);
 }
 

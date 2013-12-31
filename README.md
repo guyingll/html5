@@ -113,3 +113,47 @@ Saturation(饱和度)。 取值为0%到100%之间的值；
 Lightness(亮度)。 取值为0%到100%之间的值；
 4. opacity ：
 alpha(透明度)。 取值在0到1之间；
+
+
+### border-image:url("../img/border.png") 29 round;
+1. pixel 像素值
+2. style 平铺(repeated)、铺满(rounded)或拉伸(stretched)
+
+
+### transform
+属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。
+
+* transform: none|transform-functions;
+1. none	定义不进行转换。
+2. matrix(n,n,n,n,n,n)	定义 2D 转换，使用六个值的矩阵。
+3. matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	定义 3D 转换，使用 16 个值的 4x4 矩阵。
+4. translate(x,y)	定义 2D 转换。   移动位置
+5. translate3d(x,y,z)	定义 3D 转换。
+6. translateX(x)	定义转换，只是用 X 轴的值。
+7. translateY(y)	定义转换，只是用 Y 轴的值。
+8. translateZ(z)	定义 3D 转换，只是用 Z 轴的值。
+9. scale(x,y)	定义 2D 缩放转换。
+10. scale3d(x,y,z)	定义 3D 缩放转换。
+11. scaleX(x)	通过设置 X 轴的值来定义缩放转换。
+12. scaleY(y)	通过设置 Y 轴的值来定义缩放转换。
+13. scaleZ(z)	通过设置 Z 轴的值来定义 3D 缩放转换。
+14. rotate(angle)	定义 2D 旋转，在参数中规定角度。
+15. rotate3d(x,y,z,angle)	定义 3D 旋转。
+16. rotateX(angle)	定义沿着 X 轴的 3D 旋转。
+17. rotateY(angle)	定义沿着 Y 轴的 3D 旋转。
+18. rotateZ(angle)	定义沿着 Z 轴的 3D 旋转。
+19. skew(x-angle,y-angle)	定义沿着 X 和 Y 轴的 2D 倾斜转换。元素对称改变
+20. skewX(angle)	定义沿着 X 轴的 2D 倾斜转换。
+21. skewY(angle)	定义沿着 Y 轴的 2D 倾斜转换。
+22. perspective(n)	为 3D 转换元素定义透视视图。
+
+
+### 伪类
+
+1. :active	向被激活的元素添加样式。
+2. :focus	向拥有键盘输入焦点的元素添加样式。
+3. :hover	当鼠标悬浮在元素上方时，向元素添加样式。
+4. :link	向未被访问的链接添加样式。
+5. :visited	向已被访问的链接添加样式。
+6. :first-child	向元素的第一个子元素添加样式。
+7. :lang	向带有指定 lang 属性的元素添加样式。
