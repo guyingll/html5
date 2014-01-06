@@ -5,47 +5,31 @@
     <script>
         function initiate(){
             name1=document.getElementById("firstname");
+            name2=document.getElementById("lastname");
+            name1.addEventListener("input",validation,false);
+            name2.addEventListener("input",validation,false);
+            validation();
         }
+        function validation(){
+            if(name1.value=='' && name2.value==''){
+                name1.setCustomValidity('insert at least one name');
+                name1.style.background='#ffdddd';
+            }else{
+                name1.setCustomValidity('');
+                name1.style.background='#ffffff';
+            }
+        }
+        window.addEventListener('load',initiate,false);
     </script>
 </head>
 <body>
-<nav>
-    <input type="search" name="mysearch" id="mysearch" form="myform">
-</nav>
 <section id="form">
-    <form name="myform" id="myform" method="get">
-        <input id="name" name="name" type="text">
-        <input type="password" name="password" id="password" required>
-        <input type="email" name="email" id="email" multiple>
-        <input type="search" name="search" id="search" placeholder="type your search">
-        <br/>
-        <input type="url" name="url" id="url">
-        <input type="tel" name="tel" id="tel" autofocus>
-        <input type="number" name="number" id="number" min="0" max="12" step="3">
-        <input type="range" name="range" id="range" step="5" min="0" max="100">
-        <br/>
-        <input type="date" name="date" id="date">
-        <input type="week" name="week" id="week">
-        <input type="month" name="month" id="month">
-        <input type="time" name="time" id="time">
-        <br/>
-        <input type="datetime" name="datetime" id="datetime">
-        <input type="color" name="color" id="color">
-        <input pattern="[0-9]{5}" name="pcode" id="pcode" title=" insert the 5 numbers of your postal code">
-        <br/>
-        <!--输入提示-->
-        <datalist id="mydata">
-            <option value="12323123" label="Phone 1"></option>
-            <option value="45464564" label="Phone 2"></option>
-        </datalist>
-        <input type="tel" name="myphone" id="myphone" list="mydata">
-        <progress>test</progress>
-        <meter min="0" max="10">2</meter><br />
-        <meter>2 out of 10</meter><br />
-        <meter>20%</meter>
-        <output>12</output>
-        <br/>
-        <input type="submit" value="Send">
+    <form name="registration" id="registration" method="get">
+        First Name:
+        <input type="text" name="firstname"  id="firstname">
+        Last Name:
+        <input type="text" name="lastname" id="lastname" >
+        <input type="submit" id="send" value="sign up">
 
     </form>
 </section>

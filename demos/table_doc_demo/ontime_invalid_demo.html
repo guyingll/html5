@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test forms</title>
+    <script>
+        function initiate() {
+            age = document.getElementById("age");
+            age.addEventListener("change",changerange,false);
+
+            document.information.addEventListener('invalid',validation,true);
+            document.getElementById("send").addEventListener('click',sendit,false);
+            document.information.addEventListener('input',checkval,false);
+        }
+
+        function changerange() {
+            var output = document.getElementById('range');
+            var calc = age.value - 20;
+            if (calc < 20) {
+                calc = 0;
+                age.value = 20;
+            }
+            output.innerHTML = calc + 'to' + age.value;
+        }
+
+        function validation(e) {
+            var elem = e.target;
+            elem.style.background = '#ffdddd';
+        }
+
+        function sendit() {
+            var elem=document.getElementById("nickname");
+            var valid = document.information.checkValidity();
+            if(valid){
+                document.information.submit();
+            }else if(elem.validity.patternMismatch||elem.validity.valueMissing){
+                alert('Nickname must have a minimum of 3 char')
+            }
+        }
+
+        function checkval(e) {
+            var elem = e.target;
+            if(elem.validity.valid){
+                elem.style.background = '#ffffff';
+            }else{
+                elem.style.background = '#ffdddd';
+            }
+
+        }
+
+        window.addEventListener('load',initiate,false);
+    </script>
+</head>
+<body>
+<section id="form">
+    <form name="information" id="information" method="get">
+        Nickname:
+        <input pattern="[A-Za-z]{3,}" type="text" name="nickname" id="nickname" maxlength="10" required>
+        Age Range:
+        <input type="range" name="age" id="age" min="0" max="80" step="20" value="20">
+        <input type="submit" id="send" value="sign up">
+
+    </form>
+</section>
+
+</body>
+</html>
